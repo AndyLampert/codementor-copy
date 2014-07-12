@@ -6,8 +6,48 @@
 </head>
 <body>
 	<script src="templates.js"></script>
-	<script>
-		jade.render(document.getElementById('test1'), 'test1', { name: 'Bob' });
-	</script>
+  <script>
+
+
+    // I have this working on a local branch, but instead of sending the fix, 
+    // these notes document the thought process and debugging techniques that 
+    // lead to the solution. 
+
+    // If it still doesn't click after another hour of dev, then I'll push
+    // the working branch and we can walk through it together.
+
+    // As far as I can tell, the compilation stage was successful, which
+    // suggests, as you have already identified, the error is on the client
+    // and it likely has something to do with this function. 
+
+		jade.render(document.getElementById('test1'), 'test1');
+
+    // Think of this entire process as loading a gun. You purchased bullets 
+    // (wrote jade templates) and loaded them into the gun (ran the compilation
+    // in the terminal). The only thing left, to efficiently slay the zombie,
+    // is to aim & fire. 
+
+    // The function above is how you fire. It is pulling the trigger, but it
+    // doesn't know where to aim (or it is being told to aim somewhere it shouldn't). 
+    // I know this because chrome console tells us, "Uncaught TypeError: 
+    // Cannot set property 'innerHTML' of null at templates.js:184."
+
+    // The source at line 184 is trying to set the innerHTML of something that
+    // is null, because we are aiming at the void and don't have a
+    // and the zombies aren't even around yet.
+
+    // Finally, think of the arguments you send jade.render like this:
+    //
+    // "Hi Andy! Please call me and answer the following questions!" - jade.render
+    //
+    // jade.render( 
+    //    1[Where do you want to send the template you compiled?],
+    //    2[How would you like me to reference it internally? This wont matter to you yet, but I need it for later.],
+    //    3[You don't have to answer this one, but do you have any json data used in the original jade files?
+    //      If so, please put it here. Otherwise, please leave this argument out.]
+    // );
+    //
+    // 
+  </script>
 </body>
 </html>
