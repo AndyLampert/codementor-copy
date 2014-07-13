@@ -1,3 +1,59 @@
 body {
-  background-color: lightgrey;
+  font-family: 'Raleway', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+.main-nav {
+  background-color: #073648;
+}
+
+.main-nav ul {
+  display: inline;
+}
+
+.main-nav-item {
+  display: inline;
+}
+
+.sign-up-btn {
+  display: inline;
+  text-transform: uppercase;
+}
+
+.main-sign-up-section {
+  background: url(img/jeffersoncity02.jpeg);
+}
+
+.main-sign-up-section img {
+  display: inline;
+  width: 500px;
+}
+
+.main-sign-up-section button {
+  text-transform: uppercase;
+}
+
+.main-sign-up-section h3,
+.main-sign-up-section input {
+  display: inline;
+}
+
+.main-explain-codementor {
+  background-color: green;
+}
+
+.main-explain-codementor div {
+  display: inline;
+  text-align: center;
+}
+
+.main-explain-codementor img {
+  width: 60px;
 }

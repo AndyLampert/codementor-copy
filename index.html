@@ -2,12 +2,58 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Codementor.io Practice Clone</title>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
-	<div id="main-content"></div>
-	<script src="templates.js"></script>
-  <script>
+
+	<nav class="main-nav">
+		<ul>
+			<li class="main-nav-item">Expert Mentors</li>
+			<li class="main-nav-item">Learn with Codementor</li>
+			<li class="main-nav-item">How it Works</li>
+			<li class="main-nav-item">Become a Codementor</li>
+		</ul>
+		<button class="btn primary-btn sign-up-btn">Sign Up</button>
+		<a href="#">Sign In</a>
+	</nav>
+
+	<main>
+		<section class="row main-sign-up-section">
+			<h1 class="text-center">Instant help from expert developers</h1>
+			<div class="col-md-6">
+				<img src="img/programming-help-online.png" alt="Programming Help, Learn How to Program Online">
+			</div>
+			<div class="col-md-6">
+				<h3 class="">Codementor is your instant 1:1 expert mentor helping you in real time.</h3>
+				<input type="Email address">
+				<button class="btn ">Get Help Now</button>
+			</div>
+		</section>
+		<section class="main-explain-codementor row">
+			<div class="col-md-4">
+				<img src="img/main-explain-1.png" alt="">
+				<h3>Get Experts On-Demand</h3>
+				<p>Codementor connects you with experienced mentors for instant help via screen sharing, video, and text chat.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="img/main-explain-2.png" alt="">
+				<h3>Solve Urgent Issues</h3>
+				<p>Get instant help from experts for topics including Ruby, Python, PHP, JavaScript, CSS/HTML, iOS, and more.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="img/main-explain-3.png" alt="">
+				<h3>Built Projects Faster</h3>
+				<p>Codementor helps you overcome key challenges with timely advice and speeds up your development process.</p>
+			</div>
+		</section>
+
+	</main>
+
+<!-- used for ClientJade but abandoned for now -->
+<!-- <script src="templates.js"></script> -->
+<script>
 
 
     // I have this working on a local branch, but instead of sending the fix, 
@@ -21,7 +67,8 @@
     // suggests, as you have already identified, the error is on the client
     // and it likely has something to do with this function. 
 
-		jade.render(document.getElementById('main-content'), 'test1');
+		// jade.render(document.getElementById('title-content'), 'test1');
+		// jade.render(document.getElementById('main-content'), 'test2');
 
     // Think of this entire process as loading a gun. You purchased bullets 
     // (wrote jade templates) and loaded them into the gun (ran the compilation

@@ -1,3 +1,71 @@
+$darkblue: #073648;
+
 body {
-	background-color: blue;
+	font-family: 'Raleway', sans-serif;
 }
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+
+}
+
+body {
+	color: white;
+}
+
+// main nav
+
+.main-nav {
+	background-color: $darkblue;
+}
+.main-nav ul {
+	display: inline;
+}
+
+.main-nav-item {
+	display: inline;
+}
+
+// buttons
+.sign-up-btn {
+	display: inline;
+	text-transform: uppercase;
+}
+
+// sign up / banner section 
+.main-sign-up-section {
+	background: url(img/jeffersoncity02.jpeg)
+}
+
+.main-sign-up-section img {
+	display: inline;
+	width: 500px;
+}
+
+.main-sign-up-section button {
+	text-transform: uppercase;
+}
+
+.main-sign-up-section h3,
+.main-sign-up-section input {
+	display: inline;
+}
+
+
+// that second 3-point why use section
+.main-explain-codementor {
+	background-color: green;
+}
+
+.main-explain-codementor div {
+	display: inline;
+	text-align: center;
+}
+
+.main-explain-codementor img {
+	width: 60px;
+}
+
