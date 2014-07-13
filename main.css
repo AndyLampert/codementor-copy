@@ -27,6 +27,20 @@ body {
   text-transform: uppercase;
 }
 
+.main-call-btn {
+  background-color: #149290;
+  border-radius: 2px;
+  color: white;
+  padding: 0.5em 1.5em;
+  font-size: 1.5em;
+  margin: 2em;
+  box-shadow: 1px 1px 1px blue;
+}
+.main-call-btn:hover {
+  box-shadow: none;
+  color: white;
+}
+
 .main-sign-up-section {
   background: url(img/jeffersoncity02.jpeg);
 }
@@ -40,11 +54,6 @@ body {
   text-transform: uppercase;
 }
 
-.main-sign-up-section h3,
-.main-sign-up-section input {
-  display: inline;
-}
-
 .main-explain-codementor {
   background-color: green;
 }
@@ -56,4 +65,19 @@ body {
 
 .main-explain-codementor img {
   width: 60px;
+}
+
+.who-uses-section {
+  color: black;
+}
+
+.who-uses-section img {
+  width: 90px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.personal-story a:first-of-type {
+  border-bottom: 1px solid lightgrey;
 }

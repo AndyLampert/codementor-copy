@@ -1,4 +1,5 @@
 $darkblue: #073648;
+$lightgreen: #149290;
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -35,6 +36,20 @@ body {
 	text-transform: uppercase;
 }
 
+.main-call-btn {
+	background-color: $lightgreen;
+	border-radius: 2px;
+	color: white;
+	padding: 0.5em 1.5em;
+	font-size: 1.5em;
+	margin: 2em;
+	box-shadow: 1px 1px 1px blue;
+	&:hover {
+		box-shadow: none;
+		color: white;
+	}
+}
+
 // sign up / banner section 
 .main-sign-up-section {
 	background: url(img/jeffersoncity02.jpeg)
@@ -51,7 +66,7 @@ body {
 
 .main-sign-up-section h3,
 .main-sign-up-section input {
-	display: inline;
+	// display: inline;
 }
 
 
@@ -67,5 +82,25 @@ body {
 
 .main-explain-codementor img {
 	width: 60px;
+}
+
+
+// use whoses codementor section
+.who-uses-section {
+	color: black;
+}
+
+.who-uses-section div div {
+}
+
+.who-uses-section img {
+	width: 90px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.personal-story a:first-of-type {
+	border-bottom: 1px solid lightgrey;
 }
 
