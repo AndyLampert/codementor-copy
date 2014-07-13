@@ -5,6 +5,7 @@
 	<title>Document</title>
 </head>
 <body>
+	<div id="main-content"></div>
 	<script src="templates.js"></script>
   <script>
 
@@ -20,7 +21,7 @@
     // suggests, as you have already identified, the error is on the client
     // and it likely has something to do with this function. 
 
-		jade.render(document.getElementById('test1'), 'test1');
+		jade.render(document.getElementById('main-content'), 'test1');
 
     // Think of this entire process as loading a gun. You purchased bullets 
     // (wrote jade templates) and loaded them into the gun (ran the compilation

@@ -189,7 +189,7 @@ attrs = attrs || jade.attrs; escape = escape || jade.escape; rethrow = rethrow |
 var buf = [];
 with (locals || {}) {
 var interp;
-buf.push('<p>hi</p>');
+buf.push('<!DOCTYPE html><html lang="en"></html><head><meta charset="UTF-8"/><title>Codementor.io clone</title><link rel="stylesheet" type="text/css" href="main.css"/></head><body><p>test test</p></body>');
 }
 return buf.join("");
 }
